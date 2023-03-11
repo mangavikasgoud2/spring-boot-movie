@@ -1,10 +1,4 @@
-/*
- * You can use the following import statements
- * 
- * import org.springframework.web.server.ResponseStatusException;
- * import org.springframework.http.HttpStatus;
- * 
- */
+
 
 package com.example.movie;
 
@@ -15,7 +9,7 @@ import org.springframework.http.HttpStatus;
 
 import java.util.*;
 
-// Do not modify the below code
+
 
 public class MovieService implements MovieRepository {
 
@@ -80,7 +74,7 @@ public class MovieService implements MovieRepository {
         }
         else{
             movieList.remove(movieId);
-            //getAllMovies();
+            
             throw new ResponseStatusException(HttpStatus.NO_CONTENT);
         }
         
